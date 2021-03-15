@@ -589,7 +589,7 @@ class ComPortBox {
     }
 
     private LinkedList<String> getCytonComPorts() {
-        final String[] names = {"FT231X USB UART", "VCP"};
+        final String[] names = {"CP2104","FT231X USB UART", "VCP"};
         final SerialPort[] comPorts = SerialPort.getCommPorts();
         LinkedList<String> results = new LinkedList<String>();
         for (SerialPort comPort : comPorts) {
@@ -2794,5 +2794,3 @@ class InitBox {
         initSystemButton.getCaptionLabel().setText(text);
     }
 };
-
-
